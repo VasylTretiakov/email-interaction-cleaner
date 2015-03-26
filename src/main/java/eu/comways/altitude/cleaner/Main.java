@@ -39,9 +39,7 @@ public class Main {
             counter = sc.nextInt();
 
             // Configure the javaApi with the parameters defined in the configuration file
-            //java.net.URL configURL = new File("config.xml").toURL();
-            Configuration config = //new XMLConfiguration(configURL);
-            new XMLConfiguration(new File("config.xml"));
+            Configuration config = new XMLConfiguration(new File("config.xml"));
             Configurator.setConfiguration(config);
 
             // Initialize the IntegrationServer object
