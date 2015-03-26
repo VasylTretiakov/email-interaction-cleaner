@@ -1,0 +1,28 @@
+apply plugin: 'java'
+//apply plugin: 'spring-boot'
+apply plugin: 'idea'
+
+/*
+compileJava {
+    //enable compilation in a separate daemon process
+    options.fork = true
+
+    //enable incremental compilation
+    //options.incremental = true
+    //options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+*/
+
+jar {
+    baseName = 'cleaner'
+    version = '0.0.1-RELEASE'
+}
+
+dependencies {
+    compile fileTree(dir: '../../lib/JavaApi', include: '*.jar')
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
