@@ -15,11 +15,11 @@ compileJava {
 
 jar {
     baseName = 'cleaner'
-    version = '0.0.1-RELEASE'
+    version = '0.0.2-RELEASE'
 }
 
 dependencies {
-    compile fileTree(dir: '../../lib/JavaApi', include: '*.jar')
+    compile fileTree(dir: '../../lib/JavaApi770', include: '*.jar')
 
 }
 
