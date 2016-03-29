@@ -1,17 +1,5 @@
 apply plugin: 'java'
-//apply plugin: 'spring-boot'
 apply plugin: 'idea'
-
-/*
-compileJava {
-    //enable compilation in a separate daemon process
-    options.fork = true
-
-    //enable incremental compilation
-    //options.incremental = true
-    //options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
-}
-*/
 
 jar {
     baseName = 'cleaner'
@@ -24,5 +12,5 @@ dependencies {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
+    gradleVersion = '2.12'
 }
